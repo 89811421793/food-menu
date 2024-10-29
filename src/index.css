@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat-Regular.eot');
+  src: url('./assets/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./assets/Montserrat-Regular.woff') format('woff'),
+    url('./assets/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
