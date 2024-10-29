@@ -1,0 +1,58 @@
+.product-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    margin-bottom: 13px;
+
+}
+
+.product-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 63px;
+
+}
+
+.productPrice {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+
+}
+
+.productWeight {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+
+}
+
+.itemCard {
+    width: 20%;
+    margin-bottom: 35px;
+    margin-right: 18px;
+    padding: 43px 21px 36px 21px;
+    border: 1px solid #D58C51;
+    color: #FFFFFF;
+}
+
+.itemCard:hover {
+    cursor: pointer;
+    color: #D58C51;
+    transition: 0.1s;
+}
+
+.itemImage {
+    margin-bottom: 30px;
+}
+
+.cardBottom {
+    display: flex;
+    justify-content: space-between;
+}
