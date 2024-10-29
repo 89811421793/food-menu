@@ -1,10 +1,12 @@
 import "./reset.css"
-import Products from "./pages/products"
+// import Products from "./pages/products"
+import Bask from "./pages/prodbasket"
 
 function App() {
   return (
     <div className="App">
-     <Products />
+     {/* <Products /> */}
+     <Bask totalsum="6220" />
     </div>
   );
 }
