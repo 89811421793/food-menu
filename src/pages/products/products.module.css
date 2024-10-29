@@ -1,4 +1,4 @@
-.container {
+container {
     width: 1300px;
     margin: 0 auto;
 }
@@ -43,5 +43,5 @@
 .basketWrapper {
     display: flex;
     justify-content: space-between;
-    margin-right:38px;
+    margin-right: 38px;
 }

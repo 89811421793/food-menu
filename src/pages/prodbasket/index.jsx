@@ -2,6 +2,7 @@ import "./bask.css"
 import Card from "../../components/UI/basketOrder"
 import Exit from "../../components/UI/Logout"
 import styled from 'styled-components'
+import {Link } from "react-router-dom";
 
 function Bask({ totalsum }) {
 
@@ -23,9 +24,9 @@ function Bask({ totalsum }) {
         <div className="basketWrapper">
             <div className="containerBasket">
                 <header className="basketHeader">
-                    <button className="returnButton">
+                <Link to={'/'} className="returnButton">
                         <img className="backArrow" src="/images/arrow_back.png" alt="" />
-                    </button>
+                    </Link>
                     <BasketTitle>Корзина с выбранными товарами</BasketTitle>
                     <Exit/>
                 </header>

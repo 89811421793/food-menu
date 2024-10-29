@@ -1,12 +1,13 @@
-import "./reset.css"
-// import Products from "./pages/products"
-import Bask from "./pages/prodbasket"
+import "./reset.css";
+import Products from "./pages/products";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-     {/* <Products /> */}
-     <Bask totalsum="6220" />
+      <Products />
+      <Link to={"/products"}></Link>
+      <Link to={"/prodbasket"}></Link>
     </div>
   );
 }
