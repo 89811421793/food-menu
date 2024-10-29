@@ -1,4 +1,5 @@
 .addButton {
+ background-color: #161516;
     position: relative;
     border: 2px solid #FFFFFF;
     border-radius: 50px;
@@ -15,6 +16,6 @@
 
 .plus {
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 6px;
+    left: 6px;
 }
