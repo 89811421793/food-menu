@@ -1,5 +1,6 @@
 import "./bask.css"
 import Card from "../../components/UI/basketOrder"
+import Exit from "../../components/UI/Logout"
 import styled from 'styled-components'
 
 function Bask({ totalsum }) {
@@ -26,6 +27,7 @@ function Bask({ totalsum }) {
                         <img className="backArrow" src="/images/arrow_back.png" alt="" />
                     </button>
                     <BasketTitle>Корзина с выбранными товарами</BasketTitle>
+                    <Exit/>
                 </header>
                 <main className="basketMain">
                     <Card src="/images/1.png" name="Устрицы по рокфеллеровски" price="2 700" />
