@@ -8,6 +8,7 @@ const initialState = {
     basketProducts: [],
     countProduct: 0,
     allPriceProductsBasket: 0,
+    product: null
 }
 
 /*createAction+createReducer=createSlice;

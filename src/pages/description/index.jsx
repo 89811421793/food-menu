@@ -1,5 +1,5 @@
 import style from "./desc.module.css"
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Basket from "../../components/UI/Basket"
 import Exit from "../../components/UI/Logout"
 import ReviewCard from '../../components/elements/Review'
@@ -11,6 +11,7 @@ const product= useSelector(state => state.products.products)
     const itemsCounter = useSelector(state => state.products.countProduct)
     const itemPrice = useSelector(state => state.products.allPriceProductsBasket)
 
+const {id} =useParams()
 
  
    

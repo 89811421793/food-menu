@@ -10,7 +10,9 @@ function Card({ url, title, description, price, weight, id }) {
 // хук useDispatch "доставляет" action к reducer, чтоб тот модифицировал состояние..
     const dispatch = useDispatch()
 
-    const addProduct = () => {
+    const addProduct = (event) => {
+        event.stopPropagation();
+
         const item = {
             id: id,
             // генерация уникального ключа для каждого компонента через встроенный метод из react-uuid (см. значение payload/idx)

@@ -23,7 +23,7 @@ const router = createBrowserRouter([
 
   {
     path: "/prodbasket",
-    element: <Bask totalsum="6220"/>,
+    element: <Bask />,
   },
 
   {
