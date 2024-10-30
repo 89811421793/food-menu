@@ -64,7 +64,7 @@
 .cardBottom {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px; /* Добавляем отступ сверху */
+    margin-top: 20px;
 }
 
 
