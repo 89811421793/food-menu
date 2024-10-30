@@ -25,7 +25,7 @@ export const productsSlice = createSlice({
             state.countProduct = state.basketProducts.length;
             state.allPriceProductsBasket = state.basketProducts.reduce((acc, current) => {
                 return acc + current.price
-            }, 0)
+            }, 0);
 
 
         },
@@ -39,7 +39,7 @@ export const productsSlice = createSlice({
             state.allPriceProductsBasket = state.basketProducts.reduce((acc, current) => {
                 return acc + current.price
             }, 0)
-        }
+        },
     }
 })
 
