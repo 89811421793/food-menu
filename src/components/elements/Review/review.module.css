@@ -1,0 +1,65 @@
+.revWrap {
+    display: flex;
+    align-items: center;
+}
+
+.reviewCard {
+    flex: 1;
+}
+
+.reviewItemPic {
+    width: 500px;
+    height: 500px;
+}
+
+.itemPicture {
+    flex: 1;
+}
+
+.reviewTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #D58C51;
+    margin-bottom: 21px;
+}
+
+.reviewDescription {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+    padding: 15px;
+}
+
+.productPrice {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.productWeight {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.orderButton {
+    font-family: 'Montserrat';
+    width: 200px;
+    height: 42px;
+    background: #D58C51;
+    color: #131313;
+    margin-left: 68px;
+}
+
+.reviewBottomWrap {
+    display: flex;
+}

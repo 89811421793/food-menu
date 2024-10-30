@@ -4,9 +4,7 @@
     font-size: 17px;
     line-height: 21px;
     margin-bottom: 13px;
-
 }
-
 
 
 .productPrice {
@@ -22,27 +20,13 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-
-
-}
-
-
-
-.itemCard:hover {
-    cursor: pointer;
-    color: #D58C51;
-    transition: 0.1s;
 }
 
 .itemImage {
     width: 210px;
     height: 212px;
     margin-bottom: 30px;
-
 }
-
-
-
 
 .itemCard {
     display: flex;
@@ -55,6 +39,12 @@
     padding: 43px 21px 36px 21px;
     border: 1px solid #D58C51;
     color: #FFFFFF;
+}
+
+.itemCard:hover {
+    cursor: pointer;
+    color: #D58C51;
+    transition: 0.1s;
 }
 
 .product-description {
@@ -86,7 +76,6 @@
     width: 30px;
     height: 30px;
     cursor: pointer;
-
 }
 
 .addButton:hover {

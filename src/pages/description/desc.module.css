@@ -1,0 +1,40 @@
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    
+}
+
+.main {
+    background-color: #161516;
+    padding: 54px 70px 68px 70px;
+    font-family: 'Montserrat';
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+    color: #FFFFFF;
+}
+
+
+
+.minorInfo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: right;
+}
+
+.basketWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 38px;
+}
+
+.itemSection {
+    height: calc(100vh - 50px);
+    color:white;
+}

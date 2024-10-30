@@ -2,7 +2,7 @@ import './card.css'
 import { addProductsBasket } from '../../../store/reducers/products';
 import { useDispatch } from 'react-redux'
 import uuid from 'react-uuid';
-
+import {useNavigate} from 'react-router-dom';
 
 
 
@@ -23,13 +23,18 @@ function Card({ url, title, description, price, weight, id }) {
         dispatch(addProductsBasket(item))
     }
 
+ const transit=useNavigate()
+
+    const getItemReview = () => {
+        transit(`/description/${id}`)
+    }
 
 
 
 
 
     return (
-        <div className="itemCard">
+        <div onClick={getItemReview} className="itemCard">
 
             <img className="itemImage" src={url} alt="" />
             <h1 className="product-title">{title}</h1>

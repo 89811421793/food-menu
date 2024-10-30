@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import { Provider } from 'react-redux';
 import { store } from './store'
+import Item from "./pages/description"
 
 
 
@@ -23,7 +24,13 @@ const router = createBrowserRouter([
   {
     path: "/prodbasket",
     element: <Bask totalsum="6220"/>,
-  }
+  },
+
+  {
+    path: "/description/:id",
+    element: <Item />,
+  },
+
 ]);
 
 
