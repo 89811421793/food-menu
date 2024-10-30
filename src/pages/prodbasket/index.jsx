@@ -3,8 +3,15 @@ import Card from "../../components/UI/basketOrder"
 import Exit from "../../components/UI/Logout"
 import styled from 'styled-components'
 import {Link } from "react-router-dom";
+import { useSelector } from 'react-redux'
 
-function Bask({ totalsum }) {
+function Bask() {
+// "подписка" на изменение состояния - хук useSelector
+ const productsBasket = useSelector(state => state.products.basketProducts)
+
+    const price = useSelector(state => state.products.allPriceProductsBasket)
+
+
 
     const BasketTitle = styled.h1`
                 font-style: normal;
@@ -15,10 +22,6 @@ function Bask({ totalsum }) {
                 color: #FFFFFF;
                 margin:0 auto;
                 `;
-
-    const Total = styled.span`
-                color: #D58C51;
-    `;
 
     return (
         <div className="basketWrapper">
@@ -31,16 +34,25 @@ function Bask({ totalsum }) {
                     <Exit/>
                 </header>
                 <main className="basketMain">
-                    <Card src="/images/1.png" name="Устрицы по рокфеллеровски" price="2 700" />
-                    <Card src="/images/3.png" name="Креветки по-королевски в лимонном соке" price="1 820" />
-                    <Card src="/images/2.png" name="Свиные ребрышки на гриле с зеленью" price="1 600" />
+                    {productsBasket.map(item => {
+                        return (
+                            <Card
+                                key={item.idx}
+                                id={item.idx}
+                                urlImg={item.url}
+                                title={item.title}
+                                price={item.price}
+
+                            />
+                        )
+                    })}
 
                 </main>
 
             </div>
             <footer className="basketFooter">
                 <div className="containerBasket footerWrap">
-                    <span className="footerText">Заказ на сумму: <Total> {totalsum} ₽ </Total></span>
+                    <span className="footerText">Заказ на сумму: {price} ₽ </span>
                     <button className="footerButton">Оформить заказ</button>
                 </div>
             </footer>

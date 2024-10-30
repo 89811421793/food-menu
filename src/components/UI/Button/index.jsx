@@ -1,5 +1,5 @@
 function Button () { 
-    // инлайн в переменной/константе
+
     const buttonStyles = {
         border: "2px solid red",
         borderRadius:"50px",

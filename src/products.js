@@ -1,4 +1,4 @@
-export const productsList=[
+export const products=[
 {
 id:1,
 url:"/images/1.png",

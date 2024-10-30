@@ -1,5 +1,5 @@
 function Basket () {
-    return ( // инлайн
+    return ( 
         <button style = {{
             backgroundColor: "#D58C51",
             border: "none",
