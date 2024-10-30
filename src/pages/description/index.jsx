@@ -5,16 +5,18 @@ import Exit from "../../components/UI/Logout"
 import ReviewCard from '../../components/elements/Review'
 import { useSelector } from 'react-redux';
 
-
 function Item() {
-const product= useSelector(state => state.products.products)
-    const itemsCounter = useSelector(state => state.products.countProduct)
-    const itemPrice = useSelector(state => state.products.allPriceProductsBasket)
+    const products = useSelector(state => state.products.products);
+    const itemsCounter = useSelector(state => state.products.countProduct);
+    const itemPrice = useSelector(state => state.products.allPriceProductsBasket);
 
-const {id} =useParams()
+    const { id } = useParams();
+    
+    /* Находим продукт по id (используем Array.prototype.find() для поиска продукта в
+     массиве products на основе id, который мы получили из useParams(). Важно использовать
+    parseInt(id), чтобы преобразовать строку в число, так как id в URL будет строкой.)*/
 
- 
-   
+    const chosenProduct = products.find(item => item.id === parseInt(id));
 
     return (
         <main className={style.main}>
@@ -28,7 +30,6 @@ const {id} =useParams()
                         <div>
                             <p className={style.minorInfo}> {itemsCounter} товара </p>
                             <p className={style.minorInfo}>на сумму {itemPrice}  ₽</p>
-                            
                         </div>
                         <Link to={'/prodbasket'}>
                             <Basket />
@@ -37,24 +38,17 @@ const {id} =useParams()
                     </div>
                 </header>
                 <div className={style.itemSection}>
-
-                    <ReviewCard urlPic="/images/2.png"
-                        title="Свиные ребрышки на гриле"
-                        description="Не следует, однако забывать, что консультация с широким активом представляет 
-                        собой интересный эксперимент проверки новых предложений. Не следует, однако забывать, что
-                         сложившаяся структура организации позволяет оценить значение новых предложений. 
-                         Разнообразный и богатый опыт начало повседневной работы по формированию позиции 
-                         требуют от нас анализа позиций.Не следует, однако забывать, что консультация с 
-                         широким активом представляет собой интересный эксперимент проверки новых предложений.
-                          Не следует, однако забывать, что сложившаяся структура организации позволяет оценить
-                           значение новых предложений."
-                        price={1600}
-                        weight={750}
+                    <ReviewCard 
+                        urlPic={chosenProduct.url}
+                        title={chosenProduct.title}
+                        description={chosenProduct.description}
+                        price={chosenProduct.price}
+                        weight={chosenProduct.weight}
                     />
                 </div>
             </div>
         </main>
-    )
+    );
 }
 
 export default Item;
