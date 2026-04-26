@@ -14,7 +14,7 @@ import Item from "./pages/description"
 
 
 
-const router = createBrowserRouter([
+/*const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
@@ -31,7 +31,24 @@ const router = createBrowserRouter([
     element: <Item />,
   },
 
-]);
+]); */
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/prodbasket",
+    element: <Bask />,
+  },
+  {
+    path: "/description/:id",
+    element: <Item />,
+  },
+], {
+  basename: "/food-menu", 
+});
 
 
 
